@@ -40,11 +40,11 @@ public class MovieServiceImpl extends AbstractServiceImpl<Movie> implements Movi
 
     private boolean checkNullability(Movie movie, Person person) {
         if (movie == null) {
-            logger.warn("Order is null.");
+            logger.warn("Movie is null.");
             return true;
         }
         if (person == null) {
-            logger.warn("Product is null.");
+            logger.warn("Person is null.");
             return true;
         }
         return false;
